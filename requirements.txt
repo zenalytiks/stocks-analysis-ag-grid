@@ -1,0 +1,6 @@
+dash==3.0.4
+dash-bootstrap-components==2.0.2
+dash-ag-grid==31.3.1
+pandas==2.2.3
+polygon-api-client==1.14.5
+colorlover==0.3.0

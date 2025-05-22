@@ -1,0 +1,108 @@
+/* Main background gradient */
+body {
+  background: #1e2130;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Dashboard title styling */
+h1 {
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+/* Container styling */
+.dashboard-container {
+  border-radius: 12px;
+  box-shadow: rgba(180, 200, 255, 0.15) 0px 54px 55px,
+            rgba(180, 200, 255, 0.1) 0px -12px 30px,
+            rgba(180, 200, 255, 0.1) 0px 4px 6px,
+            rgba(180, 200, 255, 0.12) 0px 12px 13px,
+            rgba(180, 200, 255, 0.08) 0px -3px 5px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/* Custom AG Grid styling overrides */
+.ag-theme-alpine-dark {
+  --ag-background-color: transparent !important;
+  --ag-odd-row-background-color: rgba(255, 255, 255, 0.03);
+  --ag-header-background-color: rgba(0, 0, 0, 0.25);
+  --ag-header-foreground-color: #ffffff;
+  --ag-border-color: rgba(255, 255, 255, 0.08);
+  --ag-row-border-color: rgba(255, 255, 255, 0.05);
+  --ag-cell-horizontal-border: rgba(255, 255, 255, 0.05);
+  --ag-alpine-active-color: #4a90e2;
+  --ag-row-hover-color: rgba(74, 144, 226, 0.08);
+  --ag-selected-row-background-color: rgba(74, 144, 226, 0.15);
+  border-radius: 10px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.ag-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ag-row {
+  transition: background-color 0.15s ease;
+}
+
+.ag-row:hover {
+  background-color: rgba(74, 144, 226, 0.08) !important;
+}
+
+/* Enhanced refresh button styling */
+#refresh-table {
+  background: linear-gradient(135deg, #4a6cd0 0%, #2a4bb9 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#refresh-table:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #5579e6 0%, #3356d1 100%);
+}
+
+#refresh-table:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Add padding to the main container */
+.p-5 {
+  padding: 2rem !important;
+}
+
+/* Loading overlay styling */
+.dash-spinner.dash-default-spinner {
+  border-color: #4a90e2 !important;
+  border-right-color: transparent !important;
+}
+
+/* Make the container responsive */
+@media (max-width: 768px) {
+  .p-5 {
+    padding: 1rem !important;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+    padding: 15px 0;
+  }
+}
